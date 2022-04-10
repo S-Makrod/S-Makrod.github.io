@@ -99,7 +99,7 @@ const Projects = () => {
                 ]
             },
             image: 'static/pern-blog-app.png',
-            tags: ['Node.js', 'Express', 'React', 'Redux', 'Sequilize', 'PostgreSQL',],
+            tags: ['Node.js', 'Express', 'React', 'Redux', 'Sequelize', 'PostgreSQL',],
             links: {
                 source: 'https://github.com/S-Makrod/BlogAppV2',
                 host: 'https://secret-reaches-68085.herokuapp.com/'
