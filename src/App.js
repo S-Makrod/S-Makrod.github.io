@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import Home from './components/Home'
+import Menu from './components/Menu'
+import About from './components/About'
+import Projects from './components/Projects'
+import Experience from './components/Experience'
+import Footer from './components/Footer'
+
+// todo styling and colouring
+// todo need content put dummy stuff for now
+const App = () => {
+    AOS.init({once: true})
+    return (
+        <div>
+            <Menu />
+            <Home />
+            <About />
+            <Experience />
+            <Projects />
+            <Footer />
+        </div>
+    )
 }
 
-export default App;
+export default App
