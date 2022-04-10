@@ -19,7 +19,7 @@ const About = () => {
                                 In my free time I enjoy reading and playing ice hockey (pre-pandemic of course 😢). 
                                 I enjoy my quiet time and love a good work-life balance.
                             </p>
-                            <a href='Makrod_Saad_Resume.pdf' className='mt-3 p-2 btn btn-outline-dark col-4' target='_blank' rel='noreferrer'>Resume</a>
+                            <a href='static/Makrod_Saad_Resume.pdf' className='mt-3 p-2 btn btn-outline-dark col-4' target='_blank' rel='noreferrer'>Resume</a>
                         </div>
                     </div>
                 </div>
