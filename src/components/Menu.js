@@ -32,7 +32,7 @@ const Menu = () => {
     }, [setNavClass, aboutClass, experienceClass, projectClass])
 
     return (
-        <Navbar collapseOnSelect expand="lg" className={navClass? 'shadow':''} style={{ transition: '0.5s ease',backgroundColor: navClass? '#f8f9fa' : 'transparent'}} fixed='top'>
+        <Navbar collapseOnSelect expand="lg" className={navClass? 'shadow':''} style={{ transition: '0.5s ease',backgroundColor: navClass? '#f8f9fa' : 'transparent', height: '80px'}} fixed='top'>
             <div className='container'>
                 <Scroll.Link to='home' className='mt-1 mb-1 me-4 brand' spy={true} offset={offset}>
                     <Navbar.Brand ><strong>Saad Makrod</strong></Navbar.Brand>
@@ -55,7 +55,7 @@ const Menu = () => {
                     </Nav>
                 </Navbar.Collapse>
             </div>
-        </Navbar>   
+        </Navbar>
     )
 }
 

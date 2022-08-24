@@ -11,25 +11,27 @@ const ProjectModal = ({show, project, onHide}) => {
             centered
         >
             <Modal.Header closeButton>
-            <Modal.Title id={`modal-${project.name}`}>
-                {project.name}
-            </Modal.Title>
+                <Modal.Title id={`modal-${project.name}`}>
+                    {project.name}
+                </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-            <p>
-                {project.text.text}
-            </p>
-            <p>
-                Features Implemented:
-            </p>
-            <ul>
-                {project.text.features.map(feature => <li key={feature}>{feature}</li>)}
-            </ul>
-            {project.links.source? <a href={project.links.source} target='_blank' rel='noreferrer' className='btn btn-outline-dark me-2'>See Project</a>:<></>}
-            {project.links.host? <a href={project.links.host} target='_blank' rel='noreferrer' className='btn btn-outline-dark'>Live Demo</a>:<></>}
+                <p>
+                    {project.text.text}
+                </p>
+                {project.text.features.length > 0 && <>
+                    <p>
+                        Features Implemented:
+                    </p>
+                    <ul>
+                        {project.text.features.map(feature => <li key={feature}>{feature}</li>)}
+                    </ul>
+                </>}
+                {project.links.source && <a href={project.links.source} target='_blank' rel='noreferrer' className='btn btn-outline-dark me-2'>See Project</a>}
+                {project.links.host && <a href={project.links.host} target='_blank' rel='noreferrer' className='btn btn-outline-dark'>Live Demo</a>}
             </Modal.Body>
             <Modal.Footer>
-            <Button onClick={onHide} className='btn btn-dark'>Close</Button>
+                <Button onClick={onHide} className='btn btn-dark'>Close</Button>
             </Modal.Footer>
         </Modal>
     );
@@ -40,22 +42,34 @@ const Project = ({project}) => {
 
     return (
         <>
-        <Col>
-            <Card border="light" className='card' onClick={() => setModalShow(true)} role='button'>
-                <Card.Img variant='top' className='border border-dark border-3' src={project.image} />
-                <Card.Body className='text-left'>
-                    <Card.Title>{project.name}</Card.Title>
-                    {project.tags.map(tag => <Badge key={tag} pill bg="dark" className='card-pill me-2 mb-1'>{tag}</Badge>)}
-                </Card.Body>
-            </Card>
-        </Col>
-        <ProjectModal show={modalShow} project={project} onHide={() => setModalShow(false)} />
+            <Col>
+                <Card className='project-card' border="light" onClick={() => setModalShow(true)} role='button'>
+                    <Card.Img variant='top' className='project-card-img' src={project.image} />
+                    <Card.Body className='text-left'>
+                        <Card.Title>{project.name}</Card.Title>
+                        {project.tags.map(tag => <Badge key={tag} pill bg="dark" className='project-card-pill me-2 mb-1'>{tag}</Badge>)}
+                    </Card.Body>
+                </Card>
+            </Col>
+            <ProjectModal show={modalShow} project={project} onHide={() => setModalShow(false)} />
         </>
     )
 }
 
 const Projects = () => {
     const projects = [
+        {
+            name: 'CS Fundamentals',
+            text: {
+                text: 'This is a collection of work I have done both inside and outside of school. When visting this repo you will get to see implementations of core computer science concepts such as: searching, sorting, data structure implementations, low level systems programming and theory application.',
+                features: []
+            },
+            image: 'static/cs-fundamentals.png',
+            tags: ['Algorithms', 'Data Structures', 'Systems Programming'],
+            links: {
+                source: 'https://github.com/S-Makrod/CSFundamentals',
+            }
+        },
         {
             name: 'RBC Certificate Management System',
             text: {
@@ -161,7 +175,7 @@ const Projects = () => {
     ]
 
     return (
-        <div id='projects' data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" className='mb-5 container'>
+        <div id='projects' data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" className='mb-5 container' style={{paddingTop: '120px'}}>
             <h1 className='section-header'>Projects</h1>
             <hr className='my-3 col-md-6'/>
             <Row xs={1} md={2} lg={3} className='g-4'>
