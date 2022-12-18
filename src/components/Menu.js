@@ -5,34 +5,34 @@ import { Navbar, Nav } from 'react-bootstrap'
 import Scroll from 'react-scroll'
 
 const Menu = () => {
-    const [homeClass, setHomeClass] = useState('hover-underline-animation')
-    const [aboutClass, setAboutClass] = useState('hover-underline-animation')
-    const [experienceClass, setExperienceClass] = useState('hover-underline-animation')
-    const [projectClass, setProjectClass] = useState('hover-underline-animation')
-    const [navClass, setNavClass] = useState(false)
+    // const [homeClass, setHomeClass] = useState('hover-underline-animation')
+    // const [aboutClass, setAboutClass] = useState('hover-underline-animation')
+    // const [experienceClass, setExperienceClass] = useState('hover-underline-animation')
+    // const [projectClass, setProjectClass] = useState('hover-underline-animation')
+    // const [navClass, setNavClass] = useState(false)
     const offset = -80
 
-    const removeUnderline = (handler) => handler('')
-    const addUnderline = (handler) => handler('hover-underline-animation')
+    // const removeUnderline = (handler) => handler('')
+    // const addUnderline = (handler) => handler('hover-underline-animation')
 
-    const addHomeClass = (handler1, handler2) => {
-        handler1(true)
-        handler2('hover-underline-animation')
-    }
+    // const addHomeClass = (handler1, handler2) => {
+    //     handler1(true)
+    //     handler2('hover-underline-animation')
+    // }
 
-    const removeHomeClass = (handler1, handler2) => {
-        handler1('')
-        handler2(false)
-    }
+    // const removeHomeClass = (handler1, handler2) => {
+    //     handler1('')
+    //     handler2(false)
+    // }
 
-    useEffect(() => {
-        if(aboutClass === '' || experienceClass === '' || projectClass === '') {
-            setNavClass(true)
-        }
-    }, [setNavClass, aboutClass, experienceClass, projectClass])
+    // useEffect(() => {
+    //     if(aboutClass === '' || experienceClass === '' || projectClass === '') {
+    //         setNavClass(true)
+    //     }
+    // }, [setNavClass, aboutClass, experienceClass, projectClass])
 
     return (
-        <Navbar collapseOnSelect expand="lg" className={navClass? 'shadow':''} style={{ transition: '0.5s ease',backgroundColor: navClass? '#f8f9fa' : 'transparent', height: '80px'}} fixed='top'>
+        <Navbar collapseOnSelect expand="lg" style={{ transition: '0.5s ease', backgroundColor: '#fff', position: 'absolute', top: '0px', left: '0px', zIndex: 1, width: '100%' }}>
             <div className='container'>
                 <Scroll.Link to='home' className='mt-1 mb-1 me-4 brand' spy={true} offset={offset}>
                     <Navbar.Brand ><strong>Saad Makrod</strong></Navbar.Brand>
@@ -40,16 +40,16 @@ const Menu = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className='ms-auto'>
-                        <Scroll.Link activeClass='underline' to='home' className={'mt-1 mb-1 me-4 ' + homeClass} spy={true} offset={offset} onSetActive={() => removeHomeClass(setNavClass, setHomeClass)} onSetInactive={() => addHomeClass(setNavClass, setHomeClass)}>
+                        <Scroll.Link to='home' className='mt-1 mb-1 me-4 hover-underline-animation' spy={true} offset={offset}>
                             Home&nbsp;<FontAwesomeIcon icon={faHome}/>
                         </Scroll.Link>
-                        <Scroll.Link activeClass='underline' to='about' className={'mt-1 mb-1 me-4 ' + aboutClass} spy={true} offset={offset} onSetActive={() => removeUnderline(setAboutClass)} onSetInactive={() => addUnderline(setAboutClass)}>
+                        <Scroll.Link to='about' className='mt-1 mb-1 me-4 hover-underline-animation' spy={true} offset={offset}>
                             About&nbsp;<FontAwesomeIcon icon={faUser}/>
                         </Scroll.Link>
-                        <Scroll.Link activeClass='underline' to='experience' className={'mt-1 mb-1 me-4 ' + experienceClass} spy={true} offset={offset} onSetActive={() => removeUnderline(setExperienceClass)} onSetInactive={() => addUnderline(setExperienceClass)}>
+                        <Scroll.Link to='experience' className='mt-1 mb-1 me-4 hover-underline-animation' spy={true} offset={offset}>
                             Experience&nbsp;<FontAwesomeIcon icon={faGraduationCap}/>
                         </Scroll.Link>
-                        <Scroll.Link activeClass='underline' to='projects' className={'mt-1 mb-1 me-4 ' + projectClass} spy={true} offset={offset} onSetActive={() => removeUnderline(setProjectClass)} onSetInactive={() => addUnderline(setProjectClass)}>
+                        <Scroll.Link to='projects' className='mt-1 mb-1 me-4 hover-underline-animation' spy={true} offset={offset}>
                             Projects&nbsp;<FontAwesomeIcon icon={faProjectDiagram}/>
                         </Scroll.Link>
                     </Nav>

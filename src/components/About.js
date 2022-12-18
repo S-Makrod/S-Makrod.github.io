@@ -11,8 +11,8 @@ const About = () => {
         'Ruby',
         'PHP',
         'SQL',
-        'HTML (the L is for language so it counts)',
         'CSS',
+        'HTML (the L is for language so it counts)',
     ]
 
     const tools = [

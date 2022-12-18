@@ -99,7 +99,6 @@ const Projects = () => {
             tags: ['Node.js', 'Express', 'Mongoose', 'React', 'Redux', 'MongoDB'],
             links: {
                 source: 'https://github.com/S-Makrod/BlogApp',
-                host: 'https://floating-fjord-11218.herokuapp.com/'
             }
         },
         {
@@ -116,7 +115,6 @@ const Projects = () => {
             tags: ['Node.js', 'Express', 'React', 'Redux', 'Sequelize', 'PostgreSQL',],
             links: {
                 source: 'https://github.com/S-Makrod/BlogAppV2',
-                host: 'https://secret-reaches-68085.herokuapp.com/'
             }
         },
         {
@@ -175,7 +173,7 @@ const Projects = () => {
     ]
 
     return (
-        <div id='projects' data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" className='mb-5 container' style={{paddingTop: '120px'}}>
+        <div id='projects' data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" className='mb-5 p-3 container'>
             <h1 className='section-header'>Projects</h1>
             <hr className='my-3 col-md-6'/>
             <Row xs={1} md={2} lg={3} className='g-4'>
