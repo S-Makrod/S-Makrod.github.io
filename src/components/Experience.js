@@ -62,7 +62,7 @@ const Experience = () => {
 
 
     return (
-        <div className='diagonal-box'>
+        <div className='diagonal-box pt-5'>
             <div data-aos='fade-up' data-aos-duration='1000' data-aos-easing='ease-in-out' id='experience' className='mb-5 container content pb-5 pt-5'>
                 <h1 className='section-header'>Experience</h1>
                 <hr className='my-3 col-md-6'/>
