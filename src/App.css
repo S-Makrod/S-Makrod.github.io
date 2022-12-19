@@ -76,9 +76,9 @@ body {
   color: #000;
   margin-bottom: 2rem;
   background: url('../public/static/mobile-background.jpg');
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  background-size: cover !important;
+  height: 100vh !important;
+  width: 100vw !important;
   text-align: left;
 }
 
@@ -86,7 +86,7 @@ body {
   .jumbotron {
     background: url('../public/static/trees.png');
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 70vh !important;
     margin-bottom: 0;
   }
 }
@@ -95,7 +95,7 @@ body {
   margin-bottom: 2rem;
   padding-top: 10px;
   padding-left: 50px;
-  height: 30vh;
+  height: 30vh !important;
   text-align: left;
   color: #000;
   background-color: #fff;
