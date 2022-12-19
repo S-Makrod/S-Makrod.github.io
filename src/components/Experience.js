@@ -8,7 +8,13 @@ const Experience = () => {
             cardTitle: 'Web Developer',
             cardSubtitle: 'T-CAIREM',
             place: 'T-CAIREM',
-            cardDetailedText: `I am currently responsible for developing a standalone education platform across all phases of SDLC using React, Redux, and Material UI on the frontend, with Django and a PostgreSQL database on the backend. The platform is intended to be widely used by T-CAIREM members across Canada.`
+            cardDetailedText: `I am currently responsible for developing a standalone education platform across all phases of SDLC using React, Redux, and Material UI on the frontend, with Django and a PostgreSQL database on the backend. The platform is intended to be widely used by T-CAIREM members across Canada.`,
+            points: [
+                'Leading frontend and backend development of standalone education platform across all phases of SDLC using Django, React, Redux, Material UI and PostgreSQL intended to be widely used by T-CAIREM members across Canada',
+                'Responsible for communicating with both technical and non-technical stakeholders to iterate project architecture, goals, and progress, as well as developing all features of the web application',
+                'Developed admin dashboard to implement content management system and provide user administration and analytic services resulting in maintainable application that can provide metrics for future growth',
+                'Implemented Google OAuth2 with the client-side workflow resulting in secure passwordless authentication of users',
+            ]
         },
         {
             date: 'Jan 2022 - April 2022',
@@ -16,7 +22,13 @@ const Experience = () => {
             key: 'csa',
             cardSubtitle: 'RBC',
             place: 'Royal Bank of Canada',
-            cardDetailedText: `Developed the RBC Certificate Management System using Django and Python which is a CRUD web application used to manage SSL Certificates at RBC. Furthermore, I aided in developing and testing APIs on IBM Mainframe and organized internal events at RBC.`
+            cardDetailedText: `Developed the RBC Certificate Management System using Django and Python which is a CRUD web application used to manage SSL Certificates at RBC. Furthermore, I aided in developing and testing APIs on IBM Mainframe and organized internal events at RBC.`,
+            points: [
+                'Developed RBC Certificate Management CRUD application using Django and Microsoft SQL for RBC internal users',
+                'Developed custom LDAP authentication system to restrict access to users with correct active directory groups',
+                'Created custom search API that allows users to build advanced searches on properties such as date ranges, certificate statuses, encryption algorithms, and key words resulting is an easy-to-use and efficient way to find information',
+                'Aided in developing an API in Rexx on IBM Mainframe that uses hashing algorithms and partially automates the process of uploading cryptographic keys into database, improving efficiency in the Cryptographic Services team',
+            ]
         },
         {
             date: 'Sept 2021 - December 2021',
@@ -24,7 +36,10 @@ const Experience = () => {
             key: 'wd',
             cardSubtitle: `ScarRobo`,
             place: 'ScarRobo',
-            cardDetailedText: `Responsible for developing and maintaining the club website, which was developed using React.`
+            cardDetailedText: `Responsible for developing and maintaining the club website, which was developed using React.`,
+            points: [
+                'Responsible for developing and maintaining the club website, which was developed using React.'
+            ]
         },
         {
             date: 'Fall 2021, Fall 2022',
@@ -32,7 +47,11 @@ const Experience = () => {
             key: 'ta',
             cardSubtitle: `UofT`,
             place: 'University of Toronto',
-            cardDetailedText: `Teaching Assistant for the following courses: CSCA20 (Introduction to Programming) and MGTA01 (Introduction to Canadian Business). I hosted tutorials where I went over any concerns with the weekly assignments, as well as reviewed concepts that were difficult for students. Additionally, I marked tests and held office hours.`
+            cardDetailedText: `Teaching Assistant for the following courses: CSCA20 (Introduction to Programming) and MGTA01 (Introduction to Canadian Business). I hosted tutorials where I went over any concerns with the weekly assignments, as well as reviewed concepts that were difficult for students. Additionally, I marked tests and held office hours.`,
+            points: [
+                'Responsible for creating media for over 500 students to aid in setup of coding environment, hosting tutorials and marking ',
+                'Aiding in teaching programming fundamentals to students such as Python syntax, code testing, refactoring and SQL',
+            ]
         },
         {
             date: 'Sept 2020 - April 2021',
@@ -40,7 +59,11 @@ const Experience = () => {
             key: 'vpm',
             cardSubtitle: `UofT`,
             place: 'University of Toronto',
-            cardDetailedText: `Tailored marketing ideas towards improving student mental health one of which was the "November Challenge" that had over 100 participants. Additionally, I developed multimedia such as infographics, videos, and held events to promote healthy practices.`
+            cardDetailedText: `Tailored marketing ideas towards improving student mental health one of which was the "November Challenge" that had over 100 participants. Additionally, I developed multimedia such as infographics, videos, and held events to promote healthy practices.`,
+            points: [
+                'Tailored marketing ideas towards improving student mental health one of which was the "November Challenge" that had over 100 participants' ,
+                'Developed multimedia such as infographics, videos, and held events to promote healthy practices',
+            ]
         },
         {
             date: 'July 2019 - Aug 2019',
@@ -48,7 +71,11 @@ const Experience = () => {
             key: 'pmm',
             cardSubtitle: `Microsoft`,
             place: 'Microsoft',
-            cardDetailedText: `Designed and developed an Inventory Manager App using the Microsoft Power Platform. This app is responsible for managing inventory and smoothening the request process for over 2000 employees; it was later showcased at the Microsoft Canada Annual General Meeting.`
+            cardDetailedText: `Designed and developed an Inventory Manager App using the Microsoft Power Platform. This app is responsible for managing inventory and smoothening the request process for over 2000 employees; it was later showcased at the Microsoft Canada Annual General Meeting.`,
+            points: [
+                'Created an inventory app that smoothened the query process of inventory for over 2000 employees using Microsoft Power Platform, later presented at the Microsoft Canada Annual General Meeting',
+                'Developed Power BI dashboard to showcase the disparity between income and housing prices across the country',
+            ]
         },
         {
             date: 'July 2018 - Aug 2018',
@@ -56,10 +83,13 @@ const Experience = () => {
             key: 'ai',
             cardSubtitle: `TPS`,
             place: 'Toronto Police Service',
-            cardDetailedText: `Created a presentation on cyber-bullying for the School Liaison Officer that was used to improve the current presentation. Additionally, I developed an email list to improve organization and smoothen the communication process between employees.`
+            cardDetailedText: `Created a presentation on cyber-bullying for the School Liaison Officer that was used to improve the current presentation. Additionally, I developed an email list to improve organization and smoothen the communication process between employees.`,
+            points: [
+                'Created presentation on cyber-bullying for School Liaison Officer that was used to improve the current presentation',
+                'Developed email list to improve organization and smoothen the communication process between employees'
+            ]
         }
-      ]
-
+    ]
 
     return (
         <div className='diagonal-box pt-5'>
@@ -77,7 +107,9 @@ const Experience = () => {
                                     {items.map((item, idx) => <div key={'group-' + item.key} className={"tab-pane fade" + (idx == 0? " show active": "")} id={"v-pills-" + item.key} role="tabpanel" aria-labelledby={"v-pills-" + item.key + "-tab"}>
                                         <h1>{item.cardTitle} @ <span className='exp-title'>{item.place}</span></h1>
                                         <p>{item.date}</p>
-                                        <p>{item.cardDetailedText}</p>
+                                        <ul>
+                                            {item.points.map((point, idx) => <li key={item.key + '-' + idx}>{point}</li>)}
+                                        </ul>
                                     </div>)}
                                 </div>
                             </div>

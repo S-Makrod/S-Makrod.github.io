@@ -9,6 +9,23 @@ const Home = () => {
     return (
         <div>
             <div id='home' className='jumbotron' data-aos='zoom-in' data-aos-delay='100'>
+                <div className='d-none d-md-block'>
+                    <div className="bird-container bird-container--one">
+                        <div className="bird bird--one"></div>
+                    </div>
+
+                    <div className="bird-container bird-container--two">
+                        <div className="bird bird--two"></div>
+                    </div>
+
+                    <div className="bird-container bird-container--three">
+                        <div className="bird bird--three"></div>
+                    </div>
+
+                    <div className="bird-container bird-container--four">
+                        <div className="bird bird--four"></div>
+                    </div>
+                </div>
                 <div className='container'>
                     <div className='d-md-none'>
                         <div>
