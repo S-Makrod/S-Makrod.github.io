@@ -64,6 +64,12 @@ body {
 
 @media only screen and (min-width: 600px) {
   .header {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (min-height: 915px) {
+  .header {
     font-size: 100px;
   }
 }
