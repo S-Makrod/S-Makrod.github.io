@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  font-family: 'League Spartan', sans-serif !important;
+  font-family: 'Open Sans', sans-serif !important;
   font-weight: 500;
 }
 
@@ -59,7 +59,7 @@ body {
   font-size: 12vh;
   color: #000;
   margin-block-start: 0 !important;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .jumbotron {
@@ -303,7 +303,7 @@ body {
 /* ================= Section ================= */
 
 .section-header {
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   font-size: 50px;
 }
@@ -337,7 +337,7 @@ body {
   background-color: #e8e8e8 !important;
   color: #000 !important;
   margin: 5px;
-  width: 100px;
+  width: 175px;
 }
 
 .exp.active {

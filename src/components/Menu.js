@@ -5,31 +5,7 @@ import { Navbar, Nav } from 'react-bootstrap'
 import Scroll from 'react-scroll'
 
 const Menu = () => {
-    // const [homeClass, setHomeClass] = useState('hover-underline-animation')
-    // const [aboutClass, setAboutClass] = useState('hover-underline-animation')
-    // const [experienceClass, setExperienceClass] = useState('hover-underline-animation')
-    // const [projectClass, setProjectClass] = useState('hover-underline-animation')
-    // const [navClass, setNavClass] = useState(false)
     const offset = -80
-
-    // const removeUnderline = (handler) => handler('')
-    // const addUnderline = (handler) => handler('hover-underline-animation')
-
-    // const addHomeClass = (handler1, handler2) => {
-    //     handler1(true)
-    //     handler2('hover-underline-animation')
-    // }
-
-    // const removeHomeClass = (handler1, handler2) => {
-    //     handler1('')
-    //     handler2(false)
-    // }
-
-    // useEffect(() => {
-    //     if(aboutClass === '' || experienceClass === '' || projectClass === '') {
-    //         setNavClass(true)
-    //     }
-    // }, [setNavClass, aboutClass, experienceClass, projectClass])
 
     return (
         <Navbar collapseOnSelect expand="lg" style={{ transition: '0.5s ease', backgroundColor: '#fff', position: 'absolute', top: '0px', left: '0px', zIndex: 1, width: '100%' }}>

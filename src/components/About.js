@@ -7,6 +7,7 @@ const About = () => {
         'Python',
         'JavaScript',
         'C',
+        'C#',
         'Java',
         'Ruby',
         'PHP',
@@ -16,12 +17,13 @@ const About = () => {
     ]
 
     const tools = [
-        'React',
         'Django',
         'Express',
+        'Spring Boot',
+        '.NET',
+        'React',
         'Bootstrap',
         'Material UI',
-        'VS Code',
         'Git',
         'Heroku',
         'SQLite',
@@ -29,7 +31,8 @@ const About = () => {
         'MySQL',
         'MongoDB',
         'Neo4j',
-        'Figma'
+        'Figma',
+        'Jira'
     ]
 
     return (
@@ -41,11 +44,12 @@ const About = () => {
                     <div className='row'>
                         <div>
                             <p>
-                                Hi, I'm Saad! I am entering my third year at the University of Toronto.
+                                Hi, I'm Saad, a fourth year student at the University of Toronto.
                                 I enjoy coding and building new things, one of the reasons I pursued Computer
-                                Science was so that I could build software that everyone can use.
+                                Science was so that I could build software that everyone can use. I am also pursuing a
+                                minor in Economics.
                                 <br/><br/>
-                                In my free time I enjoy reading and playing ice hockey.
+                                In my free time I enjoy keeping up with the leafs, going to the gym, and reading.
                             </p>
                             <a href='static/Makrod_Saad_Resume.pdf' className='mt-3 p-2 btn btn-dark col-3' target='_blank' rel='noreferrer'>Resume</a>
                         </div>

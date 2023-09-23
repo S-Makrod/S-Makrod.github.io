@@ -5,12 +5,14 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
+    const year = new Date().getFullYear()
+
     return (
         <div id='footer' className='bg-light'>
             <div className='container'>
                 <div className='row'>
                     <div className='col-6'>
-                        <p className='text-start'>&copy; Saad Makrod 2022</p>
+                        <p className='text-start'>&copy; Saad Makrod {year}</p>
                     </div>
                     <div className='col-6 text-end'>
                         <a className='me-2' href='https://www.linkedin.com/in/saad-makrod/' target='_blank' rel='noreferrer'><FontAwesomeIcon className='social-link' border size='lg' icon={faLinkedin} /></a>
