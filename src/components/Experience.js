@@ -8,7 +8,7 @@ const Experience = () => {
             cardTitle: 'Software Developer',
             cardSubtitle: 'EcoOnline',
             place: 'EcoOnline Global',
-            cardDetailedText: `I am currently responsible for developing a standalone education platform across all phases of SDLC using React, Redux, and Material UI on the frontend, with Django and a PostgreSQL database on the backend. The platform is intended to be widely used by T-CAIREM members across Canada.`,
+            cardDetailedText: `Developing microservices for notification system in R&D department using C#, .NET, Docker, Kafka, and Datadog`,
             points: [
                 'Developing microservices for notification system in R&D department using C#, .NET, Docker, Kafka, and Datadog',
             ]
@@ -19,7 +19,7 @@ const Experience = () => {
             cardTitle: 'Software Engineer',
             cardSubtitle: 'African Impact',
             place: 'African Impact Initiative',
-            cardDetailedText: `I am currently responsible for developing a standalone education platform across all phases of SDLC using React, Redux, and Material UI on the frontend, with Django and a PostgreSQL database on the backend. The platform is intended to be widely used by T-CAIREM members across Canada.`,
+            cardDetailedText: `Designing content management, education, and collaboration systems for an entrepreneurship platform using Django, React, and PostgreSQL to aid African entrepreneurs on their ventures`,
             points: [
                 'Designing content management, education, and collaboration systems for an entrepreneurship platform using Django, React, and PostgreSQL to aid African entrepreneurs on their ventures',
             ]
@@ -30,7 +30,7 @@ const Experience = () => {
             cardTitle: 'Backend Developer',
             cardSubtitle: 'OMERS',
             place: 'OMERS',
-            cardDetailedText: `I am currently responsible for developing a standalone education platform across all phases of SDLC using React, Redux, and Material UI on the frontend, with Django and a PostgreSQL database on the backend. The platform is intended to be widely used by T-CAIREM members across Canada.`,
+            cardDetailedText: `Worked on the calculations team, developing REST APIs for OMERS services. Additionally, developed an in-memory caching system that reduces regression test runtime by over 70% and created a POC for the redesign of the validation framework, which is responsible for verification of all results and error handling.`,
             points: [
                 'Built microservices in agile environment using Java, Spring Boot, Google Cloud Platform, and Apache Camel',
                 'Developed in-memory caching system using aspect-oriented programming cutting run time of regression tests by 70%',
