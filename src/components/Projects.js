@@ -9,6 +9,7 @@ const ProjectModal = ({show, project, onHide}) => {
             size="lg"
             aria-labelledby={`modal-${project.name}`}
             centered
+            className='project-modal'
         >
             <Modal.Header closeButton>
                 <Modal.Title id={`modal-${project.name}`}>
@@ -43,7 +44,7 @@ const Project = ({project}) => {
     return (
         <>
             <Col>
-                <Card className='project-card' border="light" onClick={() => setModalShow(true)} role='button'>
+                <Card className='project-card' onClick={() => setModalShow(true)} role='button'>
                     <Card.Img variant='top' className='project-card-img' src={project.image} />
                     <Card.Body className='text-left'>
                         <Card.Title>{project.name}</Card.Title>
@@ -70,21 +71,21 @@ const Projects = () => {
                 source: 'https://github.com/S-Makrod/CSFundamentals',
             }
         },
-        {
-            name: 'RBC Certificate Management System',
-            text: {
-                text: 'This is a Django application used internally at RBC to manage SSL Certificates. The system is a multi-database application, using Microsoft SQL to manage certificate inventory and a SQLite database to manage users. Users are authenticated using LDAP. Once authenticated, they are able to perform two options which is search the database or create a certificate. The search feature queries the Microsoft SQL database and renders the results in a table. Users are able to click on certificates and update, delete, download and either reactivate or deactivate the certificate. When certificates are approved the application sends email notifications to users to let them know their certificates are ready. The frontend of the app was designed using Bootstrap.',
-                features: [
-                    'Full CRUD capabilities',
-                    'Implemented user authentication with LDAP to restrict access to only users with the correct active directory group',
-                    'Designed the frontend using Bootstrap, DataTables, and Django Messages optimize user experience',
-                    'Developed feature that parsed uploaded certificate files and updated the database'
-                ]
-            },
-            image: 'static/rbc-logo.png',
-            tags: ['Django', 'Python', 'Bootstrap', 'Microsoft SQL', 'SQLite'],
-            links: []
-        },
+        // {
+        //     name: 'RBC Certificate Management System',
+        //     text: {
+        //         text: 'This is a Django application used internally at RBC to manage SSL Certificates. The system is a multi-database application, using Microsoft SQL to manage certificate inventory and a SQLite database to manage users. Users are authenticated using LDAP. Once authenticated, they are able to perform two options which is search the database or create a certificate. The search feature queries the Microsoft SQL database and renders the results in a table. Users are able to click on certificates and update, delete, download and either reactivate or deactivate the certificate. When certificates are approved the application sends email notifications to users to let them know their certificates are ready. The frontend of the app was designed using Bootstrap.',
+        //         features: [
+        //             'Full CRUD capabilities',
+        //             'Implemented user authentication with LDAP to restrict access to only users with the correct active directory group',
+        //             'Designed the frontend using Bootstrap, DataTables, and Django Messages optimize user experience',
+        //             'Developed feature that parsed uploaded certificate files and updated the database'
+        //         ]
+        //     },
+        //     image: 'static/rbc-logo.png',
+        //     tags: ['Django', 'Python', 'Bootstrap', 'Microsoft SQL', 'SQLite'],
+        //     links: []
+        // },
         {
             name: 'MERN Blog App',
             text: {

@@ -3,17 +3,6 @@ import React from 'react'
 const Experience = () => {
     const items = [
         {
-            date: 'Sept 2023 - Present',
-            key: 'eco',
-            cardTitle: 'Software Developer',
-            cardSubtitle: 'EcoOnline',
-            place: 'EcoOnline Global',
-            cardDetailedText: `Developing microservices for notification system in R&D department using C#, .NET, Docker, Kafka, and Datadog`,
-            points: [
-                'Developing microservices for notification system in R&D department using C#, .NET, Docker, Kafka, and Datadog',
-            ]
-        },
-        {
             date: 'June 2023 - Present',
             key: 'aii',
             cardTitle: 'Software Engineer',
@@ -21,7 +10,32 @@ const Experience = () => {
             place: 'African Impact Initiative',
             cardDetailedText: `Designing content management, education, and collaboration systems for an entrepreneurship platform using Django, React, and PostgreSQL to aid African entrepreneurs on their ventures`,
             points: [
-                'Designing content management, education, and collaboration systems for an entrepreneurship platform using Django, React, and PostgreSQL to aid African entrepreneurs on their ventures',
+                'Leading development team to construct an entrepreneurship platform using Django, React, TypeScript, and PostgreSQL in order to aid African entrepreneurs on their ventures'
+            ]
+        },
+        {
+            date: 'Fall 2021, Fall 2022, Winter 2024',
+            cardTitle: 'Teaching Assistant',
+            key: 'ta',
+            cardSubtitle: `UofT`,
+            place: 'University of Toronto',
+            cardDetailedText: `Teaching Assistant for the following courses: CSCA20 (Introduction to Programming) and MGTA01 (Introduction to Canadian Business). I hosted tutorials where I went over any concerns with the weekly assignments, as well as reviewed concepts that were difficult for students. Additionally, I marked tests and held office hours.`,
+            points: [
+                `Teaching Assistant for the following courses: CSCA08 (Introduction to Computer Science), CSCA20 (Introduction to Programming) and MGTA01 (Introduction to Canadian Business)`,
+                'Managed tutorials of over 30 students teaching programming fundamentals related to syntax, testing, refactoring, and data processing using Python, Jupyter Notebooks, and SQL',
+            ]
+        },
+        {
+            date: 'Sept 2023 - Dec 2023',
+            key: 'eco',
+            cardTitle: 'Software Developer',
+            cardSubtitle: 'EcoOnline',
+            place: 'EcoOnline Global',
+            cardDetailedText: `Developing microservices for notification system in R&D department using C#, .NET, Docker, Kafka, and Datadog`,
+            points: [
+                'Developed Prometheus metric library using C# and .NET providing telemetry capabilities to all microservices',
+                'Orchestrated load test using Docker and Grafana k6 simulating 20,000 users and 150,000 requests via Kafka and REST',
+                'Built HTTP client factory and API clients to create extensible interface when communicating with external applications',
             ]
         },
         {
@@ -66,17 +80,6 @@ const Experience = () => {
                 'Built API on IBM Mainframe using hashing algorithms and Rexx cutting creation time of cryptographic keys by over 50%'
             ]
         },
-        {
-            date: 'Fall 2021, Fall 2022',
-            cardTitle: 'Teaching Assistant',
-            key: 'ta',
-            cardSubtitle: `UofT TA`,
-            place: 'University of Toronto',
-            cardDetailedText: `Teaching Assistant for the following courses: CSCA20 (Introduction to Programming) and MGTA01 (Introduction to Canadian Business). I hosted tutorials where I went over any concerns with the weekly assignments, as well as reviewed concepts that were difficult for students. Additionally, I marked tests and held office hours.`,
-            points: [
-                'Managed tutorials of over 30 students teaching programming fundamentals related to syntax, testing, refactoring, and data processing using Python, Jupyter Notebooks, and SQL',
-            ]
-        },
         // {
         //     date: 'Sept 2020 - April 2021',
         //     cardTitle: 'Virtual Program Monitor',
@@ -118,7 +121,7 @@ const Experience = () => {
         <div className='diagonal-box pt-5'>
             <div data-aos='fade-up' data-aos-duration='1000' data-aos-easing='ease-in-out' id='experience' className='mb-5 container content pb-5 pt-5'>
                 <h1 className='section-header'>Experience</h1>
-                <hr className='my-3 col-md-6'/>
+                <hr className='my-3 col-md-6 experience-hr'/>
                 <div className='row'>
                     <div className='exp-container d-none d-md-flex'>
                         <div className='exp-holder'>
@@ -136,24 +139,6 @@ const Experience = () => {
                                     </div>)}
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div className='mb-5 d-md-none'>
-                        <div className="accordion" id="exp-accordian">
-                            {items.map(item =>
-                                <div key={item.key} className="accordion-item">
-                                    <h2 className="accordion-header" id={item.key}>
-                                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={"#collapse-" + item.key} aria-expanded="false" aria-controls={"collapse-" + item.key}>
-                                            {item.place}
-                                        </button>
-                                    </h2>
-                                    <div id={"collapse-" + item.key} className="accordion-collapse collapse" aria-labelledby={item.key} data-bs-parent="#exp-accordian">
-                                        <div className="accordion-body">
-                                            <strong>{item.cardTitle} | {item.date}</strong> <br/> <br/> {item.cardDetailedText}
-                                        </div>
-                                    </div>
-                                </div>
-                            )}
                         </div>
                     </div>
                 </div>

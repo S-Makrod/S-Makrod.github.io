@@ -44,27 +44,31 @@ const About = () => {
                     <div className='row'>
                         <div>
                             <p>
-                                Hi, I'm Saad, a fourth year student at the University of Toronto.
-                                I enjoy coding and building new things, one of the reasons I pursued Computer
-                                Science was so that I could build software that everyone can use. I am also pursuing a
-                                minor in Economics.
+                                Hi, I'm Saad! I am in my fourth year at the University of Toronto, majoring in computer
+                                science and minoring in economics. I have had the chance to work with a vast number of
+                                groups, including a startup research group, two large financial enterprises, an NGO,
+                                and a technology company, in roles ranging from cyber security roles to full stack and
+                                backend development.
                                 <br/><br/>
-                                In my free time I enjoy keeping up with the leafs, going to the gym, and reading.
+                                I enjoy coding and building new things. One of the reasons I pursued computer science
+                                was so that I could build software that everyone can use.
+                                <br/><br/>
+                                In my free time, I enjoy keeping up with the leafs (sadly, this is painful), going to
+                                the gym, and reading.
                             </p>
-                            <a href='static/Makrod_Saad_Resume.pdf' className='mt-3 p-2 btn btn-dark col-3' target='_blank' rel='noreferrer'>Resume</a>
                         </div>
                     </div>
                 </div>
                 <div className='col-md-6 text-left'>
                     <h2>Languages</h2>
                     {languages.map(language => (
-                        <Badge key={language} pill bg="dark" className='about-pill me-3 mb-3'>
+                        <Badge key={language} pill bg='#ffc0cb' className='about-pill me-3 mb-3'>
                             {language}
                         </Badge>
                     ))}
                     <h2>Frameworks &#38; Tools</h2>
                     {tools.map(tool => (
-                        <Badge key={tool} pill bg="dark" className='about-pill me-3 mb-3'>
+                        <Badge key={tool} pill className='about-pill me-3 mb-3'>
                             {tool}
                         </Badge>
                     ))}
