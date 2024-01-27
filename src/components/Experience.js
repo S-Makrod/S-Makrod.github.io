@@ -33,8 +33,9 @@ const Experience = () => {
             place: 'EcoOnline Global',
             cardDetailedText: `Developing microservices for notification system in R&D department using C#, .NET, Docker, Kafka, and Datadog`,
             points: [
-                'Developed Prometheus metric library using C# and .NET providing telemetry capabilities to all microservices',
+                'Developed application monitoring library using Prometheus, C#, and .NET providing telemetry capabilities to all microservices',
                 'Orchestrated load test using Docker and Grafana k6 simulating 20,000 users and 150,000 requests via Kafka and REST',
+                'Created Datadog pipeline to correctly classify info, debug, error, and warning status of logs for traceability purposes',
                 'Built HTTP client factory and API clients to create extensible interface when communicating with external applications',
             ]
         },

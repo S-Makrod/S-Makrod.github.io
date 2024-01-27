@@ -5,10 +5,11 @@ import { Badge } from 'react-bootstrap'
 const About = () => {
     const languages = [
         'Python',
+        'Java',
+        'TypeScript',
         'JavaScript',
         'C',
         'C#',
-        'Java',
         'Ruby',
         'PHP',
         'SQL',
@@ -47,7 +48,7 @@ const About = () => {
                                 Hi, I'm Saad! I am in my fourth year at the University of Toronto, majoring in computer
                                 science and minoring in economics. I have had the chance to work with a vast number of
                                 groups, including a startup research group, two large financial enterprises, an NGO,
-                                and a technology company, in roles ranging from cyber security roles to full stack and
+                                and a technology company; in roles ranging from cyber security to full stack and
                                 backend development.
                                 <br/><br/>
                                 I enjoy coding and building new things. One of the reasons I pursued computer science
