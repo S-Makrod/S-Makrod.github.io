@@ -3,14 +3,28 @@ import React from 'react'
 const Experience = () => {
     const items = [
         {
-            date: 'June 2023 - Present',
+            date: 'May 2024 - Present',
+            key: 'gws',
+            cardTitle: 'Developer Consultant',
+            cardSubtitle: 'Guidewire',
+            place: 'Guidewire Software',
+            cardDetailedText: ``,
+            points: [
+                'Developing automation tool using Java to fix critical vulnerabilities in client applications and increase developer productivity'
+            ]
+        },
+        {
+            date: 'June 2023 - May 2024',
             key: 'aii',
             cardTitle: 'Software Engineer',
             cardSubtitle: 'African Impact',
             place: 'African Impact Initiative',
-            cardDetailedText: `Designing content management, education, and collaboration systems for an entrepreneurship platform using Django, React, and PostgreSQL to aid African entrepreneurs on their ventures`,
+            cardDetailedText: `Worked with NGO to build foundation of Venture Building Platform using Django, React, TypeScript, and PostgreSQL. The product is currently progressing towards MVP launch`,
             points: [
-                'Leading development team to construct an entrepreneurship platform using Django, React, TypeScript, and PostgreSQL in order to aid African entrepreneurs on their ventures'
+                'Constructed email service using Django to allow HTML formatted emails to be sent to user base via simple API',
+                'Led development team and improved developer experience through GitHub Hooks, GitHub Pipelines, and ESLint',
+                'Architected and built routing layer for React Redux app capable of controlling user access and toggling navigation styles',
+                'Leveraged TypeScript generics to develop service layer with custom HTTP client enabling communication with REST APIs'
             ]
         },
         {
@@ -122,17 +136,17 @@ const Experience = () => {
         <div className='diagonal-box pt-5'>
             <div data-aos='fade-up' data-aos-duration='1000' data-aos-easing='ease-in-out' id='experience' className='mb-5 container content pb-5 pt-5'>
                 <h1 className='section-header'>Experience</h1>
-                <hr className='my-3 col-md-6 experience-hr'/>
+                <hr className='my-3 col-md-6'/>
                 <div className='row'>
-                    <div className='exp-container d-none d-md-flex'>
+                    <div className='exp-container d-md-flex'>
                         <div className='exp-holder'>
                             <div className="d-flex align-items-start">
                                 <div className="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                    {items.map((item, idx) => <button key={"pill-" + item.key} className={"nav-link exp" + (idx == 0? " active": "")} id={"v-pills-" + item.key + "-tab"} data-bs-toggle="pill" data-bs-target={"#v-pills-" + item.key} type="button" role="tab" aria-controls={"v-pills-" + item.key} aria-selected="true">{item.cardSubtitle}</button>)}
+                                    {items.map((item, idx) => <button key={"pill-" + item.key} className={"nav-link exp" + (idx === 0? " active": "")} id={"v-pills-" + item.key + "-tab"} data-bs-toggle="pill" data-bs-target={"#v-pills-" + item.key} type="button" role="tab" aria-controls={"v-pills-" + item.key} aria-selected="true">{item.cardSubtitle}</button>)}
                                 </div>
                                 <div className="tab-content" id="v-pills-tabContent">
-                                    {items.map((item, idx) => <div key={'group-' + item.key} className={"tab-pane fade" + (idx == 0? " show active": "")} id={"v-pills-" + item.key} role="tabpanel" aria-labelledby={"v-pills-" + item.key + "-tab"}>
-                                        <h1>{item.cardTitle} @ <span className='exp-title'>{item.place}</span></h1>
+                                    {items.map((item, idx) => <div key={'group-' + item.key} className={"tab-pane fade" + (idx === 0? " show active": "")} id={"v-pills-" + item.key} role="tabpanel" aria-labelledby={"v-pills-" + item.key + "-tab"}>
+                                        <h1>{item.cardTitle} <span className='exp-title'>@ {item.place}</span></h1>
                                         <p>{item.date}</p>
                                         <ul>
                                             {item.points.map((point, idx) => <li key={item.key + '-' + idx}>{point}</li>)}

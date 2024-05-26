@@ -83,12 +83,29 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                <div className="header-line">
+                    <div className="header-left">
+                        <div className="header-content">
+                            <span className="header-text line-pulse"></span>
+                        </div>
+                    </div>
+                    <div className="header-right">
+                        <div className="header-content">
+                            <span className="header-text line-pulse"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className='ms-2 social-link-container'>
                 <a className='me-2' href='https://www.linkedin.com/in/saad-makrod/' target='_blank' rel='noreferrer'><FontAwesomeIcon className='social-link' size='lg' icon={faLinkedin} /></a>
                 <a className='me-2' href='https://github.com/S-Makrod' target='_blank' rel='noreferrer'><FontAwesomeIcon className='social-link' size='lg' icon={faGithub} /></a>
                 <a className='me-2' href='mailto:saad.makrod@gmail.com' target='_blank' rel='noreferrer'><FontAwesomeIcon className='social-link' size='lg' icon={faEnvelope} /></a>
                 <a href='static/Makrod_Saad_Resume.pdf' target='_blank' rel='noreferrer'><FontAwesomeIcon className='social-link' size='lg' icon={faPaperclip} /></a>
+            </div>
+            <div className="header-arrow">
+                <i className="arrow down"></i>
+                <i className="arrow down"></i>
+                <i className="arrow down"></i>
             </div>
         </div>
     )
