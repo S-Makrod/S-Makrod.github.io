@@ -1,9 +1,22 @@
+:root {
+  --dur: all 550ms ease-in-out;
+  --dur-a: all 650ms ease-in-out;
+  --dur-b: all 750ms ease-in-out;
+
+  /* colour pallete */
+  --col-1: #212A31;
+  --col-2: #2E3944;
+  --col-3: #124E66;
+  --col-4: #D3D9D4;
+  --col-5: #748D92;
+}
+
 body {
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif !important;
   font-weight: 500;
-  background-color: #EEE2DC;
-  color: #123C69;
+  background-color: var(--col-2);
+  color: var(--col-4);
 }
 
 .temp {
@@ -24,8 +37,8 @@ body {
   align-content: center;
   height: 100vh !important;
   flex-direction: column;
-  background: #EDC7B7;
-  background: radial-gradient(circle, #EDC7B7 0%, #EEE2DC 50%);
+  background: var(--col-1);
+  background: radial-gradient(circle, var(--col-1) 0%, var(--col-2) 50%);
 }
 
 .jumbo-header {
@@ -43,16 +56,16 @@ body {
 }
 
 .social-link {
-  color: #123C69;
-  background-color: #BAB2B5;
+  color: var(--col-4);
+  background-color: var(--col-3);
   transition: all 0.5s ease-in-out;
   padding: 8px;
   border-radius: 50px;
 }
 
 .social-link:hover {
-  color: #123C69;
-  background-color: #AC3B61;
+  color: var(--col-4);
+  background-color: var(--col-5);
 }
 
 .header-line {
@@ -66,12 +79,12 @@ body {
 }
 
 .header-left {
-  color:#AC3B61;
+  color:var(--col-5);
   transform: skew(0deg, -15deg);
 }
 
 .header-right {
-  color: #123C69;
+  color: var(--col-4);
   transform: skew(0deg, 15deg);
 }
 
@@ -95,14 +108,14 @@ body {
 }
 
 .line-pulse {
-	border-bottom: 5px solid #AC3B61;
-	box-shadow: 0 0 0 0 #AC3B61;
+	border-bottom: 5px solid var(--col-5);
+	box-shadow: 0 0 0 0 var(--col-5);
 	animation: pulse 2s infinite;
   width: 100%;
 }
 
 .arrow {
-  border: solid #AC3B61;
+  border: solid var(--col-5);
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 2px;
@@ -126,7 +139,7 @@ body {
 
 @keyframes pulse {
 	0% {
-		box-shadow: 0 0 0 0 rgba(172, 59, 97, 0.7);
+		box-shadow: 0 0 0 0 rgba(116, 141, 146, 0.7);
 	}
 
 	70% {
@@ -140,7 +153,7 @@ body {
 
 @keyframes arrow-pulse {
 	0% {
-		box-shadow: 0 0 0 0 rgba(172, 59, 97, 0.7);
+		box-shadow: 0 0 0 0 rgba(116, 141, 146, 0.7);
 	}
 
 	70% {
@@ -159,12 +172,12 @@ body {
 .underline {
   cursor: pointer;
   text-decoration: none;
-  border-bottom: solid #123C69 2px;
+  border-bottom: solid var(--col-4) 2px;
   transition: transform 0.25s ease-out;
 }
 
 .underline:hover {
-  color: #123C69;
+  color: var(--col-4);
 }
 
 .hover-underline-animation {
@@ -172,11 +185,11 @@ body {
   text-decoration: none;
   display: inline-block;
   position: relative;
-  color: #123C69;
+  color: var(--col-4);
 }
 
 .hover-underline-animation:hover {
-  color: #123C69;
+  color: var(--col-4);
 }
 
 .hover-underline-animation:after {
@@ -187,7 +200,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #123C69;
+  background-color: var(--col-4);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -203,7 +216,7 @@ body {
 }
 
 .navbar-brand {
-  color: #123C69 !important;
+  color: var(--col-4) !important;
 }
 
 .navbar-logo {
@@ -231,8 +244,8 @@ body {
 }
 
 .diagonal-box {
-  background-image: linear-gradient(45deg, rgba(237, 199, 183, .5), rgba(237, 199, 183, .5));
-  color: #123C69;
+  background-image: linear-gradient(45deg, var(--col-1) 50%, var(--col-1) 50%);
+  color: var(--col-4);
 	transform: skewY(-5deg);
 }
 
@@ -241,7 +254,7 @@ body {
 }
 
 hr {
-  background-color: #123C69;
+  background-color: var(--col-4);
 }
 
 /* ================= Section End ================= */
@@ -249,36 +262,36 @@ hr {
 /* ================= Experience ================= */
 
 .exp {
-  background-color: #BAB2B5 !important;
-  border: 2px solid #123C69 !important;
-  color: #123C69 !important;
+  background-color: var(--col-3) !important;
+  border: 2px solid var(--col-4) !important;
+  color: var(--col-4) !important;
   margin: 5px;
   width: 175px;
 }
 
 .exp.active {
-  color: #BAB2B5 !important;
-  background-color: #123C69 !important;
+  color: var(--col-3) !important;
+  background-color: var(--col-4) !important;
 }
 
 .exp-container {
   display: flex;
   justify-content: center;
   width: 100vw;
-  color: #123C69;
+  color: var(--col-4);
 }
 
 .exp-holder {
   padding: 10px;
-  border: 2px solid #123C69;
+  border: 2px solid var(--col-4);
   border-radius: 10px;
   margin: 30px;
   width: 60vw;
-  background-color: #EEE2DC;
+  background-color: var(--col-2);
 }
 
 .exp-title {
-  color: #AC3B61;
+  color: var(--col-5);
 }
 
 /* ================= Experience End ================= */
@@ -288,8 +301,8 @@ hr {
 .about-pill {
   padding: 10px;
   min-width: 50px;
-  background-color: #BAB2B5 !important;
-  color: #123C69;
+  background-color: var(--col-3) !important;
+  color: var(--col-4);
 }
 
 /* ================= About End ================= */
@@ -297,31 +310,25 @@ hr {
 /* ================= Project ================= */
 
 .card-btn {
-  background-color: #BAB2B5;
-  border-color: #123C69;
-  color: #123C69;
+  background-color: var(--col-3);
+  border-color: var(--col-4);
+  color: var(--col-4);
   width: 150px;
   margin: 5px;
 }
 
 .card-btn:hover {
-  background-color: #123C69;
-  border-color: #123C69;
-  color: #BAB2B5;
+  background-color: var(--col-4);
+  border-color: var(--col-4);
+  color: var(--col-3);
 }
 
 .card-skills {
-  color: #AC3B61;
+  color: var(--col-5);
 }
 
 .card-content {
   text-align: center;
-}
-
-:root {
-  --dur: all 550ms ease-in-out;
-  --dur-a: all 650ms ease-in-out;
-  --dur-b: all 750ms ease-in-out;
 }
 
 .item {
@@ -331,7 +338,7 @@ hr {
   position:relative;
   border-radius:15px;
   box-sizing:border-box;
-  color:#123C69;
+  color:var(--col-4);
 }
 
 .card {
@@ -347,11 +354,11 @@ hr {
   -o-transition: var(--dur);
   transition: var(--dur);
   clip-path: circle(100.0% at 50% 50%);
-  background-color:#BAB2B5 !important;
+  background-color:var(--col-3) !important;
 }
 
 .circle {
-  background:#123C69;
+  background:var(--col-4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,12 +377,12 @@ hr {
   -o-transition: var(--dur-a);
   transition: var(--dur-a);
   clip-path: circle(100.0% at 50% 50%);
-  color: #BAB2B5;
+  color: var(--col-3);
   padding: 30px;
 }
 
 .circle2 {
-  background:#AC3B61;
+  background:var(--col-5);
   -webkit-transition: var(--dur-b);
   -moz-transition: var(--dur-b);
   -ms-transition: var(--dur-b);

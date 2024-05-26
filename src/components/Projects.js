@@ -48,7 +48,7 @@ const Projects = () => {
                             <div className="circle circle2"></div>
                             <div className="circle">
                                 <h2>{project.name}</h2>
-                                <p className='card-skills'>{project.tags.join(', ')}</p>
+                                <p>{project.tags.join(', ')}</p>
                             </div>
                             <div className='card-content'>
                                 <p>{project.text}</p>
