@@ -137,6 +137,10 @@ body {
   padding-top: 30px;
 }
 
+.wrap {
+  margin-top: 10vh;
+}
+
 @keyframes pulse {
 	0% {
 		box-shadow: 0 0 0 0 rgba(116, 141, 146, 0.7);
