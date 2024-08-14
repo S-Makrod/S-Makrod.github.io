@@ -10,7 +10,9 @@ const Experience = () => {
             place: 'Guidewire Software',
             cardDetailedText: ``,
             points: [
-                'Developing automation tool using Java to fix critical vulnerabilities in client applications and increase developer productivity'
+                'Architected and presented enhancement to vulnerability detection system used in cloud transition projects to stakeholders',
+                'Developed automation tool using Java to repair 12 vulnerabilities in client applications, saving days of manual effort',
+                'Built CLI application using Python to transition property files to XML configuration files, saving 30+ consultants hours'
             ]
         },
         {
@@ -21,10 +23,10 @@ const Experience = () => {
             place: 'African Impact Initiative',
             cardDetailedText: `Worked with NGO to build foundation of Venture Building Platform using Django, React, TypeScript, and PostgreSQL. The product is currently progressing towards MVP launch`,
             points: [
-                'Constructed email service using Django to allow HTML formatted emails to be sent to user base via simple API',
-                'Led development team and improved developer experience through GitHub Hooks, GitHub Pipelines, and ESLint',
-                'Architected and built routing layer for React Redux app capable of controlling user access and toggling navigation styles',
-                'Leveraged TypeScript generics to develop service layer with custom HTTP client enabling communication with REST APIs'
+                'Engineered Django email service capable of delivering HTML-formatted emails across 10 distinct business cases',
+                'Implemented routing layer for React Redux app to auto-toggle between 4 user access levels and improve security',
+                'Utilized TypeScript generics and Axios to develop customizable REST API client and integrate with 3 external APIs',
+                'Leveraged GitHub Hooks, GitHub Pipelines, and ESLint resulting in a 50% increase in development standards compliance'
             ]
         },
         {
@@ -47,10 +49,9 @@ const Experience = () => {
             place: 'EcoOnline Global',
             cardDetailedText: `Developing microservices for notification system in R&D department using C#, .NET, Docker, Kafka, and Datadog`,
             points: [
-                'Developed application monitoring library using Prometheus, C#, and .NET providing telemetry capabilities to all microservices',
-                'Orchestrated load test using Docker and Grafana k6 simulating 20,000 users and 150,000 requests via Kafka and REST',
-                'Created Datadog pipeline to correctly classify info, debug, error, and warning status of logs for traceability purposes',
-                'Built HTTP client factory and API clients to create extensible interface when communicating with external applications',
+                'Created Datadog pipeline to parse and correctly classify application logs across 5 unique statuses for traceability purposes',
+                'Authored telemetry library using Prometheus, C#, and .NET, providing application monitoring across 5+ microservices',
+                'Orchestrated load test using Docker and Grafana k6 simulating 20,000 users and 150,000 requests via Kafka and REST'
             ]
         },
         {
@@ -61,10 +62,10 @@ const Experience = () => {
             place: 'OMERS',
             cardDetailedText: `Worked on the calculations team, developing REST APIs for OMERS services. Additionally, developed an in-memory caching system that reduces regression test runtime by over 70% and created a POC for the redesign of the validation framework, which is responsible for verification of all results and error handling.`,
             points: [
-                'Built microservices in agile environment using Java, Spring Boot, Google Cloud Platform, and Apache Camel',
-                'Developed in-memory caching system using aspect-oriented programming cutting run time of regression tests by 70%',
-                'Enhanced validation framework using Spring Constraint Validator reducing complexity of managing payload validations',
-                'Automated management of semantic versioning using GitHub Pipelines when publishing JARs to Maven repositories',
+                'Worked in agile setting to build microservices using Java, Spring Boot, Google Cloud Platform, and Apache Camel',
+                'Automated management of semantic versioning using GitLab Pipelines when publishing JARs to Maven repositories',
+                'Reduced regression tests run time by 70% by creating in-memory caching system using aspect-oriented programming',
+                'Enhanced validation framework using Spring Constraint Validator to reduce complexity of managing payload validations'
             ]
         },
         {
@@ -75,10 +76,10 @@ const Experience = () => {
             place: 'T-CAIREM',
             cardDetailedText: `I am currently responsible for developing a standalone education platform across all phases of SDLC using React, Redux, and Material UI on the frontend, with Django and a PostgreSQL database on the backend. The platform is intended to be widely used by T-CAIREM members across Canada.`,
             points: [
-                'Collaborated with stakeholders to efficiently deliver Django and React single-page app with Redux architecture',
-                'Designed and built content management system equipped with analytic dashboard using React and Chart.js',
-                'Architected PostgreSQL database schema defining relations between users, resource entities, and access control',
-                'Implemented authentication system integrated with client-side Google OAuth2 using JavaScript, Python, and Axios',
+                'Designed PostgreSQL database schema defining relations between users, resource entities, ratings, and favourites',
+                'Collaborated with 8 stakeholders to define requirements and deliver Django and React Redux single-page application',
+                'Engineered CMS equipped with analytic dashboard to centralize resource approval and track 7 metrics for data analysis',
+                'Integrated client-side Google OAuth2 authentication using Python, and Axios, allowing for passwordless authentication'
             ]
         },
         {
@@ -90,9 +91,9 @@ const Experience = () => {
             cardDetailedText: `Developed the RBC Certificate Management System using Django and Python which is a CRUD web application used to manage SSL Certificates at RBC. Furthermore, I aided in developing and testing APIs on IBM Mainframe and organized internal events at RBC.`,
             points: [
                 'Constructed X.509 certificate parser using Python allowing users to upload and download certificates in Django app',
-                'Implemented LDAP authentication system integrated with RBC Azure Active Directory using Python',
-                'Developed search API using Django allowing users to build advanced queries on Microsoft SQL certificate database',
-                'Built API on IBM Mainframe using hashing algorithms and Rexx cutting creation time of cryptographic keys by over 50%'
+                'Filtered Microsoft SQL database by developing search API using Django to execute advanced queries across 10+ fields',
+                'Decreased application access time for 25+ employees by implementing LDAP authentication integrated with Azure AD',
+                'Streamlined cryptographic key creation on Mainframe using hashing algorithms and Rexx, cutting generation time by 50%',
             ]
         },
         // {
