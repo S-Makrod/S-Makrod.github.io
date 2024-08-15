@@ -3,7 +3,7 @@ import React from 'react'
 const Experience = () => {
     const items = [
         {
-            date: 'May 2024 - Present',
+            date: 'May 2024 - Aug 2024',
             key: 'gws',
             cardTitle: 'Developer Consultant',
             cardSubtitle: 'Guidewire',
@@ -16,7 +16,7 @@ const Experience = () => {
             ]
         },
         {
-            date: 'June 2023 - May 2024',
+            date: 'Jun 2023 - May 2024',
             key: 'aii',
             cardTitle: 'Software Engineer',
             cardSubtitle: 'African Impact',
@@ -42,7 +42,7 @@ const Experience = () => {
             ]
         },
         {
-            date: 'Sept 2023 - Dec 2023',
+            date: 'Sep 2023 - Dec 2023',
             key: 'eco',
             cardTitle: 'Software Developer',
             cardSubtitle: 'EcoOnline',
@@ -55,7 +55,7 @@ const Experience = () => {
             ]
         },
         {
-            date: 'Jan 2023 - April 2023',
+            date: 'Jan 2023 - Apr 2023',
             key: 'omers',
             cardTitle: 'Backend Developer',
             cardSubtitle: 'OMERS',
@@ -83,7 +83,7 @@ const Experience = () => {
             ]
         },
         {
-            date: 'Jan 2022 - April 2022',
+            date: 'Jan 2022 - Apr 2022',
             cardTitle: 'Cyber Security Analyst',
             key: 'csa',
             cardSubtitle: 'Royal Bank of Canada',
@@ -109,7 +109,7 @@ const Experience = () => {
         //     ]
         // },
         {
-            date: 'July 2019 - Aug 2019',
+            date: 'Jul 2019 - Aug 2019',
             cardTitle: 'Product Marketing Manager Intern',
             key: 'pmm',
             cardSubtitle: `Microsoft`,
